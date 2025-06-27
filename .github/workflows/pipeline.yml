@@ -35,7 +35,9 @@ jobs:
 
       # Script
       - name: run my script
-        run: ./my_script.sh   
+        run: ./megafile.sh   
+        env:
+          GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       # Web Page
       - name: Setup Pages
